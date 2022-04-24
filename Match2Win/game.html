@@ -1,0 +1,19 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body style="overflow:hidden;">
+    <button id="PlayButton" onclick="Playing()" style="position:absolute; background-size:cover; padding:0px; background:url('theme.png') no-repeat center; width:100%; height:100%;"></button>
+  </body>
+  <script>
+    function Playing()
+    {
+    document.getElementById('PlayButton').outerHTML=`<iframe src="https://matchthememory.com/simple/matchinganime" style = "width:100%; height:100%; position:absolute;"></iframe>`;
+    }
+  </script>
+</html>
